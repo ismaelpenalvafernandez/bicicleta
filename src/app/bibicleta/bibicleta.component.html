@@ -1,0 +1,31 @@
+<h1>Formulario de Bicileta</h1>
+<form>
+<label for="marca" >Marca: </label>
+<input type="marca" id="marca" name="marca" [(ngModel)]="bicicleta._marca" required><br>
+<label for="color" >color: </label><br>
+<input id="color" id="color" name="color" [(ngModel)]="bicicleta._color"><br>
+<label for="velocidad" >velocidad: </label>
+<input type="number" id="velocidad" [(ngModel)]="bicicleta._velocidad" name="velocidad"><br>
+<label for="velocidad" >velocidad2: </label>
+<input type="piñones" id="piñones" [(ngModel)]="bicicleta._pinones" name="piñones"><br>
+<label for="platos" >platos: </label>
+<input type="platos" id="platos" [(ngModel)]="bicicleta._platos" name="platos"><br>
+<input type="checkbox" id="electrica" name="electrica" required [(ngModel)]="bicicleta._electrica">
+<label for="electrica" >electrica</label><br><br>
+<input type="submit" value="subir" (click)="modificarsubir()">
+<input type="submit" value="bajar" (click)="modificarbajar()">
+<input type="number" id="velocidad2" [(ngModel)]="velocidad2" name="velocidad2">
+
+<p>RESULTADO: </p>
+
+<p>Marca de la bicicleta: {{ bicicleta._marca }}</p>
+
+<p>Color de la bicicleta: {{ bicicleta._color }}</p>
+
+<p>Velocidad de la bicicleta: {{ bicicleta._velocidad}}</p>
+
+<p>Pioniones de la bicicleta: {{ bicicleta._pinones }}</p>
+
+<p>Platos de la bicicleta: {{ bicicleta._platos }}</p>
+
+<p>Bicicleta eléctrica: {{ bicicleta._electrica ? 'Sí' : 'No' }}</p>
